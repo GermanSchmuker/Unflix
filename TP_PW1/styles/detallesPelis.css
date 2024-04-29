@@ -68,3 +68,7 @@ body{
     width: 320px;
     height: 200px;
 }
+.second a img:hover{
+    transition-duration: 0.3s;
+    scale:1.1;
+}
