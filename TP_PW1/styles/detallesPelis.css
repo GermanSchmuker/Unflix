@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.first{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    color: #f4f1f1;
+    padding: 35px;
+    
+
+}
+#IframeyStartButton iframe{
+    border-radius: 15px;
+    
+}
+
+  #IframeyStartButton a button{
+    background-color:  rgb(58, 58, 114);
+    color: #f4f1f1;
+    font-size: 20px;
+    border-radius: 15px;
+    border-color: #f4f1f1;
+    padding: 25px 95px;
+    margin-left: 140px;
+    margin-top: 40px;
+    
+
+    
+}
+
+ #Text{
+    border-radius:15px;
+    background-color: rgb(47, 47, 109);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+ #Text h2{
+    font-size: 45px;
+    padding: 15px;
+    
+}
+ #Text p{
+    font-size: 17px;
+    padding: 15px;
+    
+    
+    
+}
+#Text p a{
+ color: #f4f1f1;
+}
+.second{
+    padding: 15px;
+    font-size: 25px;
+    color: #f4f1f1;
+}
+.second a img{
+    
+    
+    margin-left: 30px;
+    border-radius: 15px;
+    width: 320px;
+    height: 200px;
+}
