@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    border: 3px solid red;
+    height: 50px;
+}
+.nav ul{
+    border: 3px solid blue;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+.nav li{
+    border: 1px solid black;
+    list-style: none;
+    width: 25%;
+}
