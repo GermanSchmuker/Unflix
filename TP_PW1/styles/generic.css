@@ -28,7 +28,7 @@ body{
     width: 25%;
     border-radius: 10px;
     margin-right: 3px;
-    transition: all .3s;
+    transition: all .3s ;
 }
 
 .nav a{
@@ -55,9 +55,9 @@ body{
 }
 
 .nav li:hover{
-    transform: translateY(9px);
-    
+    transform: translateY(19px);
 }
+
 /*-----------------------------------------------*/
 footer{
     background-color: #0a0d1d;
