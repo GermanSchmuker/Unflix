@@ -56,6 +56,8 @@ body{
 
 .nav li:hover{
     transform: translateY(19px);
+    background-color: #1e2759;
+    border: 5px solid #161C40;
 }
 
 /*-----------------------------------------------*/
