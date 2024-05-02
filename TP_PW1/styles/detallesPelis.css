@@ -48,9 +48,7 @@ body{
  #Text p{
     font-size: 17px;
     padding: 15px;
-    
-    
-    
+ 
 }
 #Text p a{
  color: #f4f1f1;
@@ -61,14 +59,12 @@ body{
     color: #f4f1f1;
 }
 .second a img{
-    
-    
     margin-left: 30px;
     border-radius: 15px;
     width: 320px;
     height: 200px;
 }
 .second a img:hover{
-    transition-duration: 0.3s;
-    scale:1.1;
+    filter: brightness(100%);
+    transform: scale(1.05);
 }
