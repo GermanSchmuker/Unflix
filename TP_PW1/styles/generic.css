@@ -1,9 +1,23 @@
+@font-face {
+    font-family: 'medium';
+    src: url(../assets/fonts/Lexend-Deca/LexendDeca-Medium.ttf);
+
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url(../assets/fonts/Lexend-Deca/LexendDeca-Regular.ttf);}
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #1e2759;
+<<<<<<< HEAD
 
+=======
+    font-family: 'medium';
+>>>>>>> de605921dcd5c1fba62034701c4fe601a36de12a
 }
 
 .nav{
@@ -11,6 +25,7 @@ body{
     position: sticky ;
     top: 0px;
     z-index: 100;
+    font-family: 'medium' !important;
 }
 
 .nav ul{
@@ -56,7 +71,7 @@ body{
 }
 
 .nav li:hover{
-    transform: translateY(19px);
+    transform: translateY(5px);
     background-color: #1e2759;
     border: 5px solid #161C40;
 }
