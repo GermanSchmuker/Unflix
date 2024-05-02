@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/generic.css">
+    <link rel="stylesheet" href="../styles/perfil.css">
     <title>Perfil</title>
 </head>
 <body>
@@ -31,13 +32,13 @@
         </section>
 
         <section class="section2">
-            <div>
-                <p>E-mail</p>
-                <p>pepito@gmail.com</p>
+            <div class="primerDiv">
+                <p class="e-mail_titulo">E-mail</p>
+                <p class="e-mail_valor">pepito@gmail.com</p>
             </div>
             <div>
-                <p>Contraseña</p>
-                <input type="password" readonly value="micontraseñasupersegura1234">
+                <p class="titulo_contraseña">Contraseña</p>
+                <input type="password" readonly value="micontraseñasupersegura1234" id="password_readonly">
             </div>
             <div>
                 <label for="new-password">Ingrese la nueva contraseña</label>
@@ -50,33 +51,46 @@
         </section>
 
         <section class="section3">
+
             <p>Métodos de pago</p>
+
             <div class="medio_pago_tarjeta">
-                <input type="radio" name="metodos_de_pago" id="radio_tarjeta">
-                <label for="radio_tarjeta">Tarjeta de crédito</label>
-                <input type="text" placeholder="Número de tarjeta">
-                <input type="text" placeholder="XXX">
+                <div class="div_radio_tarjeta">
+                    <input type="radio" name="metodos_de_pago" id="radio_tarjeta">
+                    <label for="radio_tarjeta" >Tarjeta de crédito</label>
+                </div>
+                <div class="div_input_tarjeta">
+                    <input type="text" placeholder="Número de tarjeta">
+                    <input type="text" placeholder="XXX" id="codigo_tarjeta">
+                </div>
             </div>
+
             <div class="medio_pago_cupon">
-                <input type="radio" name="metodos_de_pago" id="cupon_de_pago">
-                <label for="cupon_de_pago">Cupón de pago</label>
-                <div>
+                <div class="div_radio_cupon">
+                    <input type="radio" name="metodos_de_pago" id="cupon_de_pago">
+                    <label for="cupon_de_pago">Cupón de pago</label>
+                </div>
+                
+                <div class="div_checkbox">
                     <input type="checkbox" id="pago_facil">
                     <label for="pago_facil">Pago fácil</label>
-                    <input type="checkbox" id="rapi_pago">
+                    <input type="checkbox" id="check_rapi_pago">
                     <label for="rapi_pago">RapiPago</label>
                 </div>
             </div>
+
             <div class="medio_pago_transferencia">
-                <input type="radio" name="metodos_de_pago" id="transferencia_bancaria">
-                <label for="transferencia_bancaria">Transferencia bancaria</label>
+                <div class="div_transferencia">
+                    <input type="radio" name="metodos_de_pago" id="transferencia_bancaria">
+                    <label for="transferencia_bancaria">Transferencia bancaria</label>
+                </div>
                 <p>CBU: 123456789987654321</p>
             </div>
         </section>
 
         <section class="section4">
-            <button type="submit">Guardar cambios</button>
-            <a href="../index.html">Cancelar suscripción</a>
+            <button type="submit" class="boton_verde">Guardar cambios</button>
+            <a href="../index.html" class="boton_rojo">Cancelar suscripción</a>
         </section>
 
     </form>
