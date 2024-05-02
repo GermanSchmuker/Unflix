@@ -23,18 +23,63 @@
             </li>
         </ul>
     </nav>
+    <form action="#" class="formulario">
 
+        <section class="section1">
+            <img src="../assets/icons/FotoUsuario.svg" alt="Imagen del usuario">
+            <p>NombreDeUsuario</p>
+        </section>
 
+        <section class="section2">
+            <div>
+                <p>E-mail</p>
+                <p>pepito@gmail.com</p>
+            </div>
+            <div>
+                <p>Contraseña</p>
+                <input type="password" readonly value="micontraseñasupersegura1234">
+            </div>
+            <div>
+                <label for="new-password">Ingrese la nueva contraseña</label>
+                <input type="password" id="new-password" placeholder="Ingrese nueva contraseña">
+            </div>
+            <div>
+                <label for="repeat-new-password">Repita la nueva contraseña</label>
+                <input type="password" id="repeat-new-password" placeholder="Repita nueva contraseña">
+            </div>
+        </section>
 
+        <section class="section3">
+            <p>Métodos de pago</p>
+            <div class="medio_pago_tarjeta">
+                <input type="radio" name="metodos_de_pago" id="radio_tarjeta">
+                <label for="radio_tarjeta">Tarjeta de crédito</label>
+                <input type="text" placeholder="Número de tarjeta">
+                <input type="text" placeholder="XXX">
+            </div>
+            <div class="medio_pago_cupon">
+                <input type="radio" name="metodos_de_pago" id="cupon_de_pago">
+                <label for="cupon_de_pago">Cupón de pago</label>
+                <div>
+                    <input type="checkbox" id="pago_facil">
+                    <label for="pago_facil">Pago fácil</label>
+                    <input type="checkbox" id="rapi_pago">
+                    <label for="rapi_pago">RapiPago</label>
+                </div>
+            </div>
+            <div class="medio_pago_transferencia">
+                <input type="radio" name="metodos_de_pago" id="transferencia_bancaria">
+                <label for="transferencia_bancaria">Transferencia bancaria</label>
+                <p>CBU: 123456789987654321</p>
+            </div>
+        </section>
 
+        <section class="section4">
+            <button type="submit">Guardar cambios</button>
+            <a href="../index.html">Cancelar suscripción</a>
+        </section>
 
-
-
-
-
-
-
-
+    </form>
 
 
 
