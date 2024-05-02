@@ -1,8 +1,19 @@
+@font-face {
+    font-family: 'medium';
+    src: url(../assets/fonts/Lexend-Deca/LexendDeca-Medium.ttf);
+
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url(../assets/fonts/Lexend-Deca/LexendDeca-Regular.ttf);}
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #1e2759;
+    font-family: 'medium';
 }
 
 .nav{
@@ -10,6 +21,7 @@ body{
     position: sticky ;
     top: 0px;
     z-index: 100;
+    font-family: 'medium' !important;
 }
 
 .nav ul{
