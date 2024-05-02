@@ -3,26 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>moviesulp</title>
+    <title>unflix.com</title>
     <link rel="stylesheet" href="styles/style.css" />
-  </head> 
-  <body class="body_login">
+  </head>
+  <body>
     <header>
-      <img class="imagen_login" src="assets/images/imagen_login.jpg" alt="" />
+      <section class="container">
+        <img src="assets/images/imagenTierra.jpg" alt="" />
+        <h1>UNFLIX</h1>
+        <p>Las mejores series y peliculas</p>
+      </section>
     </header>
-    <form class="form_inicio" >
-      <div class="contenedorCampo1">
-        <label for="campoDeTexto1">Nombre de usuario</label>
-        <input type="text " id="campoDeTexto1" />
-      </div>
-      <div class="contendorCampo2">
-        <label for="campoDeTexto2">Contraseña</label>
-        <input type="password" id="campoDeTexto2"/>
-      </div>
+    <section class="formulario">
+      <h2>Inicio de sesión</h2>
+      <form>
+        <div class="contenedorCampo">
+          <label for="campoDeTexto1">Nombre de usuario</label>
+          <input type="text " id="campoDeTexto1" />
+        </div>
+        <div class="contenedorCampo">
+          <label for="campoDeTexto2">Contraseña</label>
+          <input type="password" id="campoDeTexto2" />
+        </div>
+        <p class="link_recuperar_contraseña">
+          Olvidaste tu contraseña?
+          <a href="">Recuperar contraseña</a>
+        </p>
+        <button type="submit" class="boton_inicio">Iniciar sesión</button>
 
-      <button type="submit" id="button_iniciar_sesion">Iniciar sesión</body>
-
-    </form>
-
+        <p class="link_registro">
+          No tenes cuenta? <a href="">registrate aqui</a>
+        </p>
+      </form>
+    </section>
   </body>
 </html>

@@ -13,7 +13,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: #1e2759;
-    font-family: 'medium';
+    font-family: 'regular';
 }
 
 .nav{
@@ -74,10 +74,10 @@ body{
 
 /*-----------------------------------------------*/
 footer{
+    width: 100%;
     background-color: #0a0d1d;
     color: rgb(255, 255, 255);
     padding-top: 70px;
-    
 }
 
 .titulo_footer{
