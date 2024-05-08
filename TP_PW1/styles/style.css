@@ -71,7 +71,7 @@ form .contenedorCampo{
     margin: 30px;
 }
 .contenedorCampo input{
-    color: rgb(11, 11, 11);
+    color: #ffffff;
     width: 100%;
     padding: 0 5px;
     height: 40px;
@@ -91,7 +91,6 @@ transform: translateY(-50%);
 .boton_inicio{
 width: 150px;
 height: 30px;
-border: 1px solid;
 background: #f24405;
 border-radius: 25px ;
 color: white;
@@ -113,5 +112,76 @@ cursor: pointer;
     margin-bottom: 10px;
     padding: 25px;
 }
+/* recuperarContraseña */
 
+.boton_email{
+    width: 150px;
+    height: 30px;
+    border: 2px #ff1327;
+    background: #f24405;
+    color: white;
+    border-radius: 25px;
+    margin-left:25px ;
+    margin-bottom: 20px;
+}
+.boton_cancelar{
+    width: 150px;
+    height: 30px;
+    border: 2px #ff1327;
+    background: #f24405;
+    color: white;
+    border-radius: 25px;
+    margin-left:25px ;
 
+}
+.formulario_recuperar_contraseña{
+    color: rgb(248, 248, 248);
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+background:  #1e2759;
+border-radius: 10px;
+border:2px #f24405 solid;
+box-shadow: 5px 5px 12px #f24405;
+}
+.formulario_recuperar_contraseña h2{
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 2px #f24405 solid;
+}
+/* registro */
+.formulario_registrar_usuario{
+    color: rgb(248, 248, 248);
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+width: 700px;
+background:  #1e2759;
+border-radius: 10px;
+border:2px #f24405 solid;
+box-shadow: 5px 5px 12px #f24405;
+}
+.formulario_registrar_usuario h2{
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 2px #f24405 solid;
+}
+.formulario_registro{
+ display: flex;
+ justify-content: center;
+}
+.botones_pagos{
+    display: flex;
+}
+.botones_pagos div{
+    margin:auto;
+    margin-top: 10px;
+}
+#cupon_pago{
+width: 20px;    
+}
