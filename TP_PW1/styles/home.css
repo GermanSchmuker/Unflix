@@ -80,7 +80,7 @@ input[type="search"]:focus{
     grid-template-rows: repeat(9, 1fr);
     grid-gap: 20px;
     padding: 20px;
-    background: linear-gradient(0deg, #0a0d1d , #161C40, #1e2759);
+     
 }
 
 .grid img{
