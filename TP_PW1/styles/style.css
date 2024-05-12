@@ -1,9 +1,21 @@
+@font-face {
+    font-family: 'medium';
+    src: url(../assets/fonts/Lexend-Deca/LexendDeca-Medium.ttf);
+
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url(../assets/fonts/Lexend-Deca/LexendDeca-Regular.ttf);
+}
+
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-
+font-family: 'regular';
 }
+
 body{
     background-color: #161C40;
 }
@@ -184,4 +196,12 @@ box-shadow: 5px 5px 12px #f24405;
 }
 #cupon_pago{
 width: 20px;    
+}
+
+
+
+/*-----------------*/
+button a{
+    text-decoration: none;
+    color: #f0f0f0;
 }
