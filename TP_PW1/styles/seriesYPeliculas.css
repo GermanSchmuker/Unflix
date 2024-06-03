@@ -33,8 +33,8 @@
 }
 
 .contendor_general img{
-    width: 370px;
-    height: 210px;
+    width: 370px;/*370*/
+    height: 210px;/*210*/
     border-radius: 10px;
     filter: brightness(85%);
     transition: all .3s;
@@ -75,3 +75,40 @@
     scroll-margin-top: 80px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------MEDIA QUERY----------------------------------------------------*/
+
+@media screen and (max-width: 960px) {
+    .contendor_general{
+
+        & div{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 90px 180px 180px;
+            row-gap: 40px;
+        }
+        img{
+            width: 100%;
+            height: 200px;
+        }
+    }
+    .titulos{
+        grid-column: 1 / 3;
+        
+    }
+
+
+
+}
