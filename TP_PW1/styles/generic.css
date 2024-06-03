@@ -106,3 +106,16 @@ footer{
     color: rgb(179, 179, 179);
 }
 
+
+
+@media screen and (max-width: 960px) {
+    
+    .nav a{
+        font-size: 20px;
+    }
+    
+    .titulo_footer{
+        left: 235px;
+    }
+
+}

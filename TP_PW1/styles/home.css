@@ -76,17 +76,21 @@ input[type="search"]:focus{
 /*---------------------------------------------------------------------------------*/
 .grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(370px,1fr)); 
     background: linear-gradient(0deg, #0a0d1d , #161C40, #1e2759);
-    grid-template-rows: repeat(9, 1fr);
     grid-gap: 20px;
     padding: 20px;
      
+    & a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .grid img{
-    width: 370px;
-    height: 210px;
+    width: 23.125em;
+    height: 13.125em;
     border-radius: 10px;
     filter: brightness(85%);
     transition: all .3s;
@@ -94,4 +98,43 @@ input[type="search"]:focus{
 .grid img:hover{
     filter: brightness(100%);
     transform: scale(1.05);
+}
+
+
+
+
+
+/*------------MEDIA QUERY---------------------------------------------------------*/
+/*El linear gradient por ejemplo si en la query se lo saco, sigue estando...*/
+@media screen and (max-width: 960px) {
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+
+        & img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .categorias{
+        padding-left: 0;
+    }
+
+    .buscador{
+        padding-right: 0;
+        width: 40%;
+    }
+
+    .contenedor_filtros{
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+
+
+
+
+
+
+
 }
