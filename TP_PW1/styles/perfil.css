@@ -43,100 +43,62 @@ input:focus{
     font-size: 20px;
     grid-area: section2;
     display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: space-evenly; 
+    justify-content: center;
+    align-items: center;
+    column-gap: 2em;
+
+
+    & .mis_labels{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        row-gap: 2em;
+        }
+
+    .mis_inputs{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 1.85em;
+    }
+
 }
 
-.section2 p{
-    display: inline-block;
-}
-
-.section2 div{
-    padding-right: 150px;
-}
-
-#password_readonly,
-#new-password,
-#repeat-new-password{
-    margin-left: 20px;
-    letter-spacing: 0.2px;
-}
-
-.primerDiv{
-    margin-bottom: -25px;
-}
-
-.e-mail_titulo{
-    padding-right: 20px;
-}
-
-.e-mail_valor{
-    padding-right: 25px ;
-}
 /*----------------------------------------------*/
 .section3{
     font-size: 20px;
     grid-area: section3;
     display: flex;
     flex-direction: column;
-    align-items: end;
-    justify-content: space-evenly; 
+    align-items: start; 
+    justify-content: center;
+
+    & >p{
+        border-bottom: 1px solid #ffffff; 
+    }
+    .medio_pago_tarjeta{
+        padding-top: 0.6em;
+    }
     
+    .div_input_tarjeta,
+    .div_checkbox,
+    .numero_cbu{
+        width: 17em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1em 0;;
+    }
+
+    #codigo_tarjeta{
+        width: 2.4em;
+        margin-left: 0.4em;
+    }
+
+    .div_checkbox #check_rapi_pago{
+        margin-left: 1.5em;
+    }
 }
-
-.section3>p{
-    align-self: center;
-    margin-top: 50px;
-    padding-right: 170px;
-}
-
-.section3 .medio_pago_tarjeta{
-    display: flex;
-    flex-direction: column;
-}
-
-.div_radio_tarjeta{
-    position: relative;
-    right: 130px;
-}
-
-.div_input_tarjeta{
-    position: relative;
-    right: 100px;
-    top: 10px;
-}
-
-#codigo_tarjeta{
-    width: 35px;
-
-}
-
-.div_radio_cupon{
-    position: relative;
-    right: 120px;
-}
-
-.div_checkbox{
-    position: relative;
-    right: 90px;
-    top: 10px;
-}
-
-#check_rapi_pago{
-    margin-left: 30px;
-}
-
-.div_transferencia{
-    position: relative;
-    right: 143px;
-}
-
-.medio_pago_transferencia p{
-    position: relative;
-    right: 111px;
-}
-
 
 /*-----------------------------------------------*/
 
@@ -160,7 +122,7 @@ input:focus{
 .boton_verde{
     background-color: rgb(0, 133, 0);
     border: none;
-    cursor: pointer;
+    cursor: not-allowed;
     height: 35px; 
 }
 
@@ -170,15 +132,6 @@ input:focus{
     text-align: center;
     text-decoration: none;
 
-}
-
-
-/**/
-
-.section2,
-.section3{
-    position: relative;
-    right: 100px;
 }
 
 .section2 input,
@@ -192,13 +145,6 @@ input:focus{
     caret-color: rgb(255, 255, 255);
     color: #ffffff;
 }
-
-
-
-
-
-
-
 
 /*---------MEDIA QUERY---------------------------------*/
 @media screen and (max-width: 960px) {
@@ -218,111 +164,60 @@ input:focus{
     /*----Seccion 2 ----*/
     .section2 {
         font-size: 25px;
-        padding: 0;
-        right: 180px;
-        
-        & div{
-            padding-right: 0;
-        }   
-        & > p{
-            padding-top: 0;
-        }
-        .div_change_password{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .label_new_password
-        {
-            display: block;
-            text-align: end;
-            height: 62px;
-            width: 280px; 
-        }
-        .primerDiv{
-            position: absolute;
-            top: -50px;
-            left: 405px;
-        }
-        #password_readonly,
-        #new-password,
-        #repeat-new-password{
-            font-size: 16px;
-            height: 30px;
-            width: 250px;
-            padding: 9px;
-            letter-spacing: 2px;
-            border: 1px solid #0a0d1d;
+        padding-right: 5.5em;
+
+        & .e-mail_valor{
+            padding-bottom: .8em;
         }
     }
+
     /*----Seccion 3 ----*/
     .section3{
         font-size: 25px;
-        margin-bottom: -50px;
-
-        & > p{
-            padding-right: 0;
-            margin-left: 180px;
-            margin-top: 0;
-            font-size: 25px;
-            border-bottom: 1px solid white;
-        }
-        .medio_pago_tarjeta{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-
-            & .div_radio_tarjeta{
-                right: 50px;
-                top: 0px;
-            }   
-            .div_input_tarjeta{
-                right: 0px;
-                top: 0;
-
-                & input{
-                    font-size: 16px;
-                    height: 30px;
-                    width: 250px;
-                    padding: 9px;
-                    letter-spacing: 2px;
-                    border: 1px solid #0a0d1d;
-                }
-            }
-        }
-        .medio_pago_cupon{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-
-            & .div_radio_cupon{
-                right: 80px;
-            }
-            .div_checkbox{
-                left: 0px;
-                top: 0px;
-            }
-        }
-        .medio_pago_transferencia{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-
-            & p{
-                right: 0;
-                left: 30px;
-            }
-            .label_transf_bancaria,
-            #transferencia_bancaria{
-                position: relative;
-                right: 0px;
-                left: 145px;
-            }
-        }
+        justify-content: center;
+        align-items: center;
     }
+
     /*----Seccion 4 ----*/
     /*no cambie nada del section4*/
 }
+
+@media screen and (max-width: 752px){
+    .formulario{
+        grid-template-columns: 1fr; 
+    }
+    .section2{
+        text-align: end;
+        padding-left: 2em;
+        
+        & .e-mail_valor{
+            padding-bottom: 0;
+        }
+        
+        .mis_inputs{
+            position: relative;
+
+            & .e-mail_valor{
+                position: relative;
+                top: -2.8em;
+            }
+            #password_readonly{
+                position: relative;
+                top: -3.8em;;   
+            }
+            #new-password{
+                position: relative;
+                top: -1.4em;                
+            }
+            #repeat-new-password{
+                position: relative;
+                top: 2.5em;            
+            }
+        }
+    }
+
+    .section4{
+        flex-direction: column;
+    }
+}
+

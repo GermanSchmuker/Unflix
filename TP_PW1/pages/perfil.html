@@ -46,37 +46,20 @@
       </section>
 
       <section class="section2">
-        <div class="primerDiv">
+        <div class="mis_labels">
           <p class="e-mail_titulo">E-mail</p>
-          <p class="e-mail_valor">pepito@gmail.com</p>
-        </div>
-        <div>
-          <p class="titulo_contraseña">Contraseña</p>
-          <input
-            type="password"
-            readonly
-            value="micontraseñasupersegura1234"
-            id="password_readonly"
-          />
-        </div>
-        <div class="div_change_password">
+          <label for="password_readonly" class="titulo_contraseña">Contraseña</label>
           <label for="new-password" class="label_new_password">Ingrese la nueva contraseña</label>
-          <input
-            type="password"
-            id="new-password"
-            placeholder="Ingrese nueva contraseña"
-          />
-        </div>
-        <div class="div_change_password">
           <label for="repeat-new-password" class="label_new_password">Repita la nueva contraseña</label>
-          <input
-            type="password"
-            id="repeat-new-password"
-            placeholder="Repita nueva contraseña"
-          />
+        </div>
+        <div class="mis_inputs">
+          <p class="e-mail_valor">pepito@gmail.com</p>
+          <input type="password" readonly value="micontraseñasupersegura1234" id="password_readonly"/>
+          <input type="password" id="new-password" placeholder="Ingrese nueva contraseña"/>
+          <input type="password" id="repeat-new-password" placeholder="Repita nueva contraseña"/>
         </div>
       </section>
-
+      
       <section class="section3">
         <p>Métodos de pago</p>
 
@@ -114,7 +97,7 @@
             />
             <label for="transferencia_bancaria" class="label_transf_bancaria">Transferencia bancaria</label>
           </div>
-          <p>CBU: 123456789987654321</p>
+          <p class="numero_cbu">CBU: 123456789987654321</p>
         </div>
       </section>
 
