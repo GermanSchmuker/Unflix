@@ -148,3 +148,19 @@ footer{
     }
 
 }
+
+@media screen and (max-width: 390px){
+    .footer{
+        & .titulo_footer{
+            left: 2.4em;
+            font-size: 1.8em; 
+        }
+        
+        .contendor_nombres_footer{
+            font-size: 1em;
+            display: flex;
+            flex-direction: column;
+            height: 180px;
+        }
+    }
+}
