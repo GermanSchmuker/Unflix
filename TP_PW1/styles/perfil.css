@@ -221,3 +221,48 @@ input:focus{
     }
 }
 
+
+@media screen and (max-width: 390px){
+    .section1{
+        height: 100px;
+
+        & img {
+            width: 120px;
+            height: 120px;
+        }
+        
+        & > p {
+            font-size: 20px;
+        }
+    }
+
+    .section2{
+        font-size: 20px;
+        padding-left: 5em;
+        column-gap: .8em;
+        
+        & .mis_labels{
+            row-gap: 1.5em;
+        }
+
+        .mis_inputs{
+            row-gap: 1em;
+
+            & .e-mail_valor{
+                padding-bottom: .5em;
+
+            }
+        }
+    }
+
+    .section3{
+        margin-top: -5em;
+        font-size: 20px;
+
+        & .div_input_tarjeta input{
+            border: 2px solid #11162b;
+        }
+
+    }   
+}
+
