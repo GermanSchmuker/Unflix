@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../styles/generic.css" />
     <link rel="stylesheet" href="../styles/perfil.css" />
     <link rel="icon" href="../assets/icons/LogoUnflix.png">
+    <script src="../scripts/perfil.js" defer></script>
     <title>Perfil - Unflix</title>
   </head>
   <body>
@@ -39,7 +40,7 @@
         </li>
       </ul>
     </nav>
-    <form action="#" class="formulario">
+    <form action="home.html" class="formulario" id="formulario">
       <section class="section1">
         <img src="../assets/images/pimpe.jpg" alt="Imagen del usuario" />
         <p>NombreDeUsuario</p>
@@ -69,8 +70,8 @@
             <label for="radio_tarjeta">Tarjeta de crédito</label>
           </div>
           <div class="div_input_tarjeta">
-            <input type="text" placeholder="Número de tarjeta" />
-            <input type="text" placeholder="XXX" id="codigo_tarjeta" />
+            <input type="text" placeholder="Número de tarjeta" id="numero_tarjeta" readonly/>
+            <input type="text" placeholder="XXX" id="codigo_tarjeta" readonly/>
           </div>
         </div>
 
@@ -90,11 +91,7 @@
 
         <div class="medio_pago_transferencia">
           <div class="div_transferencia">
-            <input
-              type="radio"
-              name="metodos_de_pago"
-              id="transferencia_bancaria"
-            />
+            <input type="radio" name="metodos_de_pago" id="transferencia_bancaria"/>
             <label for="transferencia_bancaria" class="label_transf_bancaria">Transferencia bancaria</label>
           </div>
           <p class="numero_cbu">CBU: 123456789987654321</p>
@@ -102,7 +99,7 @@
       </section>
 
       <section class="section4">
-        <button type="submit" class="boton_verde">Guardar cambios</button>
+        <button type="submit" class="boton_verde" disabled id="boton_verde">Guardar cambios</button>
         <a href="../index.html" class="boton_rojo">Cancelar suscripción</a>
       </section>
     </form>

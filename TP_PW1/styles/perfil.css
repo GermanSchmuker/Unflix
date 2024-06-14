@@ -126,6 +126,9 @@ input:focus{
     height: 35px; 
 }
 
+.boton_verde_habilitado{
+    cursor: pointer;
+}
 .boton_rojo{
     background-color: rgb(196, 0, 0);
     padding-top: 5px;
