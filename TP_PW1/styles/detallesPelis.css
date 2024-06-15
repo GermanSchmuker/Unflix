@@ -19,7 +19,25 @@ body{
     
 }
 
-#IframeyStartButton  a button{
+#IframeyStartButton{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.a_boton_play{
+    justify-self: center;
+    align-self: center;
+    background-color:  rgb(58, 58, 114);
+    color: #f4f1f1;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid #f4f1f1;
+    padding: 35px 75px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+/* #IframeyStartButton  a button{
     
     background-color:  rgb(58, 58, 114);
     color: #f4f1f1;
@@ -34,7 +52,7 @@ body{
     filter: brightness(110%);
     transform: scale(1.05);
 
-}
+} */
 
  #Text{
     border-radius:15px;
@@ -95,10 +113,10 @@ h2{
     width: 100%;
     height: 70%;
 }
-#IframeyStartButton  a button{
+/* #IframeyStartButton  a button{
     margin: 10px 0px 10px 340px;
     
-}
+} */
 
 .second{
     display: grid;
@@ -125,10 +143,10 @@ h2{
         width: 100%;
         height: 70%;
     }
-    #IframeyStartButton  a button{
+    /* #IframeyStartButton  a button{
         margin: 10px 0px 10px 240px;
         
-    }
+    } */
     
     .second{
         display: grid;
@@ -150,28 +168,44 @@ h2{
 
 @media screen and (max-width: 390px) {
 
-    
+    #IframeyStartButton{
+        height: 400px;
+        width: 100%;
+    }
    
     #IframeyStartButton iframe{
         margin: 0px;
-         height: 400px;
-        width: 560px;
+        height: 220px;
+        width: 330px;  
         
     }
-    #IframeyStartButton  a button{
+
+    .first{
+        height: 900px;
+     }
+    /* #IframeyStartButton  a button{
         margin: 10px 0px 10px 180px;
         
-    }
+    } */
    
-    
+    .second{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
     
     .second a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-left: 0px;
     }
     
     .second a img{
-      height: 300px;
-       width: 600px;
+        width: 350px;
+        height: auto; 
         
         
     }
