@@ -2,37 +2,36 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
+
 .first{
     display: grid;
     grid-template-columns: 40% 60%;
     color: #f4f1f1;
     padding: 35px;
-    
-
 }
+
 #IframeyStartButton iframe{
     border-radius: 15px;
-    
 }
 
-#IframeyStartButton a button{
+#IframeyStartButton{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.a_boton_play{
+    justify-self: center;
+    align-self: center;
     background-color:  rgb(58, 58, 114);
     color: #f4f1f1;
     font-size: 20px;
     border-radius: 15px;
-    border-color: #f4f1f1;
-    margin: 50px 0px 0px 130px;
-    
-
-    
-}
-#IframeyStartButton a button:hover{
-    cursor:pointer;
-    filter: brightness(110%);
-    transform: scale(1.05);
-
+    border: 1px solid #f4f1f1;
+    padding: 35px 75px;
+    text-decoration: none;
+    margin-top: 20px;
 }
 
  #Text{
@@ -40,28 +39,29 @@ body{
     background-color: rgb(47, 47, 109);
     align-items: center;
     justify-content: center;
-    text-align: center;
-    
+    text-align: center; 
 }
 
  #Text h2{
     font-size: 45px;
     padding: 15px;
-    
 }
+
  #Text p{
     font-size: 17px;
     padding: 15px;
- 
 }
+
 #Text p a{
  color: #f4f1f1;
 }
+
 h2{
     font-size: 35px;
     color: #f4f1f1;
     padding-left: 20px;
 }
+
 .second{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -82,52 +82,47 @@ h2{
     filter: brightness(100%);
     transform: scale(1.05);
 }
+
 @media screen and (max-width: 960px) {
- 
-    .first{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr ;
-    }
-    #IframeyStartButton iframe{
-        width: 100%;
-        height: 70%;
-    }
-    #IframeyStartButton  a button{
-        margin: 10px 0px 10px 340px;
-        
-    }
     
-    .second{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr ;
-    }
-    .second a{
-        padding: 10px;
-    }
+       .first{
+           display: grid;
+           grid-template-columns: 1fr;
+           grid-template-rows: 1fr 1fr ;
+       }
+       #IframeyStartButton iframe{
+           width: 100%;
+           height: 70%;
+       }
     
-    .second a img{
-        width: 100%;
-        
-    }
+       .second{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: 1fr 1fr ;
+       }
+       .second a{
+           padding: 10px;
+       }
        
+       .second a img{
+           width: 100%; 
+       }
     }
+
+
     @media screen and (max-width: 752px){
+
         .first{
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr ;
         }
+
         #IframeyStartButton iframe{
             width: 100%;
             height: 70%;
         }
-        #IframeyStartButton  a button{
-            margin: 10px 0px 10px 240px;
-            
-        }
-        
+
         .second{
             display: grid;
             grid-template-columns: 1fr ;
@@ -139,39 +134,44 @@ h2{
         
         .second a img{
             height: 300px;
-           width: 600px;
-            
-            
+           width: 600px;  
         }
-    
     }
     
-    @media screen and (max-width: 391px) {
-    
+    @media screen and (max-width: 390px) {
+
+        #IframeyStartButton{
+            height: 400px;
+            width: 100%;
+        }
         
-       
         #IframeyStartButton iframe{
             margin: 0px;
-             height: 400px;
-            width: 560px;
-            
+            height: 220px;
+            width: 330px;  
         }
-        #IframeyStartButton  a button{
-            margin: 10px 0px 10px 180px;
-            
-        }
-       
-        
-        
+
+         .first{
+            height: 900px;
+         }
+
+        .second{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+
         .second a{
-            padding-left: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0px; 
         }
         
         .second a img{
-          height: 300px;
-           width: 600px;
-            
-            
-        }
-    
+            width: 350px;
+            height: auto;  
+        } 
     }
