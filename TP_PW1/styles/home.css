@@ -80,7 +80,7 @@ input[type="search"]:focus{
     background: linear-gradient(0deg, #0a0d1d , #161C40, #1e2759);
     grid-gap: 20px;
     padding: 20px;
-    min-height: 243px;
+    min-height: 400px;
      
     & a{
         display: flex;

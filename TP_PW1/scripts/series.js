@@ -1,147 +1,84 @@
-let arrayDeSeries = [
-    /*SERIES DE AUTOS--------------------------------------------*/
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie5.jpg',
-        "titulo":'formula 1',
-        "categoria":'autos',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie14.jpg',
-        "titulo":'un gran viaje por europa',
-        "categoria":'autos',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie15.jpg',
-        "titulo":'race bubba wallace',
-        "categoria":'autos',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie16.jpg',
-        "titulo":'west coast customs',
-        "categoria":'autos',
-        "tipo":'serie',
-    },
-    /*SERIES De CIENCIA FICCION--------------------------------------*/
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie17.jpg',
-        "titulo":'outlander',
-        "categoria":'cienciaFiccion',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie18.jpg',
-        "titulo":'flash',
-        "categoria":'cienciaFiccion',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie19.jpg',
-        "titulo":'avatar',
-        "categoria":'cienciaFiccion',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie1.jpg',
-        "titulo":'breaking bad',
-        "categoria":'cienciaFiccion',
-        "tipo":'serie',
-    },
-    /*SERIES DE COMEDIA--------------------------------------*/
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie6.jpg',
-        "titulo":'casados con hijos',
-        "categoria":'comedia',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie7.jpg',
-        "titulo":'the office',
-        "categoria":'comedia',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie8.jpg',
-        "titulo":'seinfeld',
-        "categoria":'comedia',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie9.jpg',
-        "titulo":'un show mas',
-        "categoria":'comedia',
-        "tipo":'serie',
-    },
-    /*SERIES DE TERROR--------------------------------------*/
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie10.jpg',
-        "titulo":'true blood',
-        "categoria":'terror',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie11.jpg',
-        "titulo":'parasyte',
-        "categoria":'terror',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie12.jpg',
-        "titulo":'slasher',
-        "categoria":'terror',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie13.jpg',
-        "titulo":'the walking dead',
-        "categoria":'terror',
-        "tipo":'serie',
-    },
-    /*SERIES DE SUSPENSO--------------------------------------*/
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie3.jpg',
-        "titulo":'gossip girl',
-        "categoria":'suspenso',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie2.jpg',
-        "titulo":'pablo escobar',
-        "categoria":'suspenso',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie20.jpg',
-        "titulo":'la ley y el orden',
-        "categoria":'suspenso',
-        "tipo":'serie',
-    },
-    {
-        "href":'../pages/detalleSerie.html',
-        "portada":'../assets/images/serie21.jpg',
-        "titulo":'csi',
-        "categoria":'suspenso',
-        "tipo":'serie',
-    }, 
-]
+let categoriaAutos = `<div id="primer_div">
+            <h4 class="titulos" id="autos">Autos</h4>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie5.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie14.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie15.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie16.jpg" alt=""></a>
+        </div>`;
+let categoriaCienciaFiccion = `<div>
+            <h4 class="titulos" id="ciencia_ficción">Ciencia ficción</h4>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie17.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie18.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie19.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie1.jpg" alt=""></a>
+        </div>`;
+let categoriaComedia = `<div>
+            <h4 class="titulos" id="comedia">Comedia</h4>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie6.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie7.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie8.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie9.jpg" alt=""></a> 
+        </div>`;
+let categoriaTerror = `<div>
+            <h4 class="titulos" id="terror">Terror</h4>
+            <a href="../pages/detalleSerie.html"> <img src="../assets/images/serie10.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie11.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie12.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie13.jpg" alt=""></a>
+        </div>`;
+let categoriaSuspenso = `<div>
+            <h4 class="titulos" id="suspenso">Suspenso</h4>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie1.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie2.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie20.jpg" alt=""></a>
+            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie21.jpg" alt=""></a>
+        </div>`;
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+let contendorGeneral = document.querySelector(".contendor_general");
+contendorGeneral.innerHTML = categoriaAutos + categoriaCienciaFiccion + categoriaComedia + categoriaSuspenso + categoriaTerror; 
+
+
+let todas = document.getElementById("ancla_todas");
+todas.addEventListener("click", (e)=>{
+    e.preventDefault();
+    contendorGeneral.innerHTML = categoriaAutos + categoriaCienciaFiccion + categoriaComedia + categoriaSuspenso + categoriaTerror; 
+});
+
+
+let autos = document.getElementById("ancla_autos");
+autos.addEventListener("click", (e)=>{
+    e.preventDefault();
+    contendorGeneral.innerHTML = categoriaAutos;
+});
+
+
+let suspenso = document.getElementById("ancla_suspenso");
+suspenso.addEventListener("click", (e)=>{
+    e.preventDefault();
+    contendorGeneral.innerHTML = categoriaSuspenso;
+});
+
+
+let terror = document.getElementById("ancla_terror");
+terror.addEventListener("click", (e)=>{
+    e.preventDefault();
+    contendorGeneral.innerHTML = categoriaTerror;
+});
+
+
+let cienciaFiccion = document.getElementById("ancla_ciencia_ficcion");
+cienciaFiccion.addEventListener("click", (e)=>{
+    e.preventDefault();
+    contendorGeneral.innerHTML = categoriaCienciaFiccion;
+});
+
+
+let comedia = document.getElementById("ancla_comedia");
+comedia.addEventListener("click", (e)=>{
+    e.preventDefault();
+    contendorGeneral.innerHTML = categoriaComedia;
+});
+
+
+

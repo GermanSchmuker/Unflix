@@ -313,6 +313,7 @@ let selectCategorias = document.getElementById("selector_categorias");
 
 //cada vez que cambia el select de opcion
 selectCategorias.addEventListener("change",()=>{
+    inputBuscador.value = "";
     //vacia el contenedor
     contenedorDeSeriesYPeliculas.innerHTML = '';
     //obtengo el valor del select
