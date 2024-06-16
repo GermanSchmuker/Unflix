@@ -331,4 +331,24 @@ selectCategorias.addEventListener("change",()=>{
 })
 
 
+let inputBuscador = document.getElementById("buscador");
+
+inputBuscador.addEventListener("keyup",()=>{
+    contenedorDeSeriesYPeliculas.innerHTML = '';
+    let valorDelInput = inputBuscador.value;
+    let arrayFiltradoPorBusqueda = [];
+
+    if (valorDelInput.length != 0) {
+        arrayFiltradoPorBusqueda = arrayDeSeriesYPeliculas.slice().filter((miObjeto)=> miObjeto.titulo.includes(valorDelInput))
+        if (arrayFiltradoPorBusqueda.length != 0) {
+            mostrar(arrayFiltradoPorBusqueda);
+        }else{
+            contenedorDeSeriesYPeliculas.innerHTML = `<div class="mensaje_sin_coincidencias_de_busqueda">
+                        <h3>No hay resultados para: "${valorDelInput}"</h3>
+                      </div>`;;
+        }
+    }else{
+        mostrar(arrayDeSeriesYPeliculas);
+    }
+})
 
