@@ -1,147 +1,105 @@
-let arrayDePeliculas = [
-    /*PELICULAS DE AUTOS --------------------------------------*/
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula3.jpg',
-        "titulo":'rapido y furioso',
-        "categoria":'autos',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula2.jpg',
-        "titulo":'rapidos y furiosos reto tokio',
-        "categoria":'autos',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula1.jpg',
-        "titulo":'rapidos y furiosos sin control',
-        "categoria":'autos',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula8.jpg',
-        "titulo":'rapidos y furiosos 7',
-        "categoria":'autos',
-        "tipo":'pelicula',
-    },
-    /*PELICULAS DE CENCIA FICCION --------------------------------------*/
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula5.jpg',
-        "titulo":'top gun maverick',
-        "categoria":'ciencia ficcion',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula15.jpg',
-        "titulo":'presagio',
-        "categoria":'ciencia ficcion',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula17.jpg',
-        "titulo":'el precio del mañana',
-        "categoria":'ciencia ficcion',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula16.jpg',
-        "titulo":'replicas',
-        "categoria":'ciencia ficcion',
-        "tipo":'pelicula',
-    },
-    /*PELICULAS DE COMEDIA --------------------------------------*/
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula12.jpg',
-        "titulo":'mama se fue de viaje',
-        "categoria":'comedia',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula4.jpg',
-        "titulo":'son como niños 2',
-        "categoria":'comedia',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula13.jpg',
-        "titulo":'un espía y medio',
-        "categoria":'comedia',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula14.jpg',
-        "titulo":'son como niños',
-        "categoria":'comedia',
-        "tipo":'pelicula',
-    },
-    /*PELICULAS DE TERROR --------------------------------------*/
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula11.jpg',
-        "titulo":'la noche del demonio 3',
-        "categoria":'terror',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula7.jpg',
-        "titulo":'cadáver',
-        "categoria":'terror',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula10.jpg',
-        "titulo":'terror en el mar',
-        "categoria":'terror',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula9.jpg',
-        "titulo":'la purga por siempre',
-        "categoria":'terror',
-        "tipo":'pelicula',
-    },
-    /*PELICULAS DE SUSPENSO --------------------------------------*/
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula18.jpg',
-        "titulo":'el francotirador la ultima masacre',
-        "categoria":'suspenso',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula19.jpg',
-        "titulo":'la isla siniestra',
-        "categoria":'suspenso',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula20.jpg',
-        "titulo":'hombre en llamas',
-        "categoria":'suspenso',
-        "tipo":'pelicula',
-    },
-    {
-        "href":'../pages/detallePeli.html',
-        "portada":'../assets/images/pelicula21.jpg',
-        "titulo":'sin rastros',
-        "categoria":'suspenso',
-        "tipo":'pelicula',
-    },
-]
+let categoriaAutos = `<div>
+                        <h4 class="titulos" id="autos">Autos</h4>
+                        <a href="../pages/detallePeli.html"><img src="../assets/images/pelicula3.jpg" alt=""/></a>
+                        <a href="../pages/detallePeli.html"><img src="../assets/images/pelicula2.jpg" alt=""/></a>
+                        <a href="../pages/detallePeli.html"><img src="../assets/images/pelicula1.jpg" alt=""/></a>
+                        <a href="../pages/detallePeli.html"><img src="../assets/images/pelicula8.jpg" alt=""/></a>
+                    </div>`;
+let categoriaCienciaFiccion = `<div>
+                                    <h4 class="titulos" id="ciencia_ficción">Ciencia ficción</h4>
+                                    <a href="../pages/detallePeli.html"><img src="../assets/images/pelicula5.jpg" alt=""/></a>
+                                    <a href="../pages/detallePeli.html"><img src="../assets/images/pelicula15.jpg" alt=""/></a>
+                                    <a href="../pages/detallePeli.html"><img src="../assets/images/pelicula17.jpg" alt=""/></a>
+                                    <a href="../pages/detallePeli.html"><img src="../assets/images/pelicula16.jpg" alt=""/></a>
+                            </div>`;
+let categoriaComedia = `      <div id="primer_div">
+        <h4 class="titulos" id="comedia">Comedia</h4>
+        <a href="../pages/detallePeli.html"
+          ><img src="../assets/images/pelicula12.jpg" alt=""
+        /></a>
+        <a href="../pages/detallePeli.html"
+          ><img src="../assets/images/pelicula4.jpg" alt=""
+        /></a>
+        <a href="../pages/detallePeli.html"
+          ><img src="../assets/images/pelicula13.jpg" alt=""
+        /></a>
+        <a href="../pages/detallePeli.html"
+          ><img src="../assets/images/pelicula14.jpg" alt=""
+        /></a>
+      </div>`;
+let categoriaTerror = `      <div>
+        <h4 class="titulos" id="terror">Terror</h4>
+        <a href="../pages/detallePeli.html">
+          <img src="../assets/images/pelicula11.jpg" alt=""
+        /></a>
+        <a href="../pages/detallePeli.html"
+          ><img src="../assets/images/pelicula7.jpg" alt=""
+        /></a>
+        <a href="../pages/detallePeli.html"
+          ><img src="../assets/images/pelicula10.jpg" alt=""
+        /></a>
+        <a href="../pages/detallePeli.html"
+          ><img src="../assets/images/pelicula9.jpg" alt=""
+        /></a>
+      </div>`;
+let categoriaSuspenso = `<div>
+        <h4 class="titulos" id="suspenso">Suspenso</h4>
+        <a href="../pages/detallePeli.html"
+          ><img src="../assets/images/pelicula18.jpg" alt=""
+        /></a>
+        <a href="../pages/detallePeli.html"
+          ><img src="../assets/images/pelicula19.jpg" alt=""
+        /></a>
+        <a href="../pages/detallePeli.html"
+          ><img src="../assets/images/pelicula20.jpg" alt=""
+        /></a>
+        <a href="../pages/detallePeli.html"
+          ><img src="../assets/images/pelicula21.jpg" alt=""
+        /></a>
+      </div>`;
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+let contendorGeneral = document.querySelector(".contendor_general");
+contendorGeneral.innerHTML = categoriaAutos + categoriaCienciaFiccion + categoriaComedia + categoriaSuspenso + categoriaTerror; 
+
+
+let todas = document.getElementById("ancla_todas");
+todas.addEventListener("click", (e)=>{
+    e.preventDefault();
+    contendorGeneral.innerHTML = categoriaAutos + categoriaCienciaFiccion + categoriaComedia + categoriaSuspenso + categoriaTerror; 
+});
+
+
+let autos = document.getElementById("ancla_autos");
+autos.addEventListener("click", (e)=>{
+    e.preventDefault();
+    contendorGeneral.innerHTML = categoriaAutos;
+});
+
+
+let suspenso = document.getElementById("ancla_suspenso");
+suspenso.addEventListener("click", (e)=>{
+    e.preventDefault();
+    contendorGeneral.innerHTML = categoriaSuspenso;
+});
+
+
+let terror = document.getElementById("ancla_terror");
+terror.addEventListener("click", (e)=>{
+    e.preventDefault();
+    contendorGeneral.innerHTML = categoriaTerror;
+});
+
+
+let cienciaFiccion = document.getElementById("ancla_ciencia_ficcion");
+cienciaFiccion.addEventListener("click", (e)=>{
+    e.preventDefault();
+    contendorGeneral.innerHTML = categoriaCienciaFiccion;
+});
+
+
+let comedia = document.getElementById("ancla_comedia");
+comedia.addEventListener("click", (e)=>{
+    e.preventDefault();
+    contendorGeneral.innerHTML = categoriaComedia;
+});
