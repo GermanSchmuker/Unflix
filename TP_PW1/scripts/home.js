@@ -34,28 +34,28 @@ let arrayDeSeriesYPeliculas = [
         "href":'../pages/detalleSerie.html',
         "portada":'../assets/images/serie17.jpg',
         "titulo":'outlander',
-        "categoria":'cienciaFiccion',
+        "categoria":'ciencia ficcion',
         "tipo":'serie',
     },
     {
         "href":'../pages/detalleSerie.html',
         "portada":'../assets/images/serie18.jpg',
         "titulo":'flash',
-        "categoria":'cienciaFiccion',
+        "categoria":'ciencia ficcion',
         "tipo":'serie',
     },
     {
         "href":'../pages/detalleSerie.html',
         "portada":'../assets/images/serie19.jpg',
         "titulo":'avatar',
-        "categoria":'cienciaFiccion',
+        "categoria":'ciencia ficcion',
         "tipo":'serie',
     },
     {
         "href":'../pages/detalleSerie.html',
         "portada":'../assets/images/serie1.jpg',
         "titulo":'breaking bad',
-        "categoria":'cienciaFiccion',
+        "categoria":'ciencia ficcion',
         "tipo":'serie',
     },
     /*SERIES DE COMEDIA--------------------------------------*/
@@ -293,11 +293,42 @@ let arrayDeSeriesYPeliculas = [
     },
 ]
 
-let contenedorDeSeriesYPeliculas = document.querySelector(".grid")
+/*Muestro todo el contenido*/
+let contenedorDeSeriesYPeliculas = document.querySelector(".grid");
+mostrar(arrayDeSeriesYPeliculas);
 
-arrayDeSeriesYPeliculas.forEach((miObjeto)=>{
-    contenedorDeSeriesYPeliculas.innerHTML += `
-    <a href="${miObjeto.href}">
-        <img src="${miObjeto.portada}" alt=""/>
-    </a>`
+
+//funcion querecibe un array y lo muestra
+function mostrar(array){
+    array.forEach((miObjeto)=>{
+        contenedorDeSeriesYPeliculas.innerHTML += `
+        <a href="${miObjeto.href}">
+            <img src="${miObjeto.portada}" alt=""/>
+        </a>`
+    })
+}
+
+
+let selectCategorias = document.getElementById("selector_categorias");
+
+//cada vez que cambia el select de opcion
+selectCategorias.addEventListener("change",()=>{
+    //vacia el contenedor
+    contenedorDeSeriesYPeliculas.innerHTML = '';
+    //obtengo el valor del select
+    let generoSeleccionado = selectCategorias.value;
+    //creo un array
+    let arrayFiltrado = [];
+
+    if (generoSeleccionado != "todas") {
+        //al array nuevo, le meto una copia del array original, filtrada por categoria
+        arrayFiltrado = arrayDeSeriesYPeliculas.slice().filter((miObjeto)=> miObjeto.categoria === generoSeleccionado);
+        //muestra el array filtrado
+        mostrar(arrayFiltrado);
+    }else{
+        mostrar(arrayDeSeriesYPeliculas);
+    }
 })
+
+
+
