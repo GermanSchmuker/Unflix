@@ -63,20 +63,55 @@ h2{
 }
 
 .second{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 25% 75%;
-    font-size: 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    margin: auto;
+   
+}
+.flecha-izquierda,
+.flecha-derecha{
+    position: absolute;
+    border: none;
+    background:rgba(0,0,0,0.3);
+    font-size: 40px;
+    height: 50%;
     color: #f4f1f1;
-    padding: 20px;
+    cursor: pointer;
+    z-index: 500;
+    
+}
+.second .flecha-izquierda{
+    left: 0;
+}
+.second .flecha-derecha{
+    right: 0;
+}
+
+.second .contenedor-carrusel{
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.second .contenedor-carrusel .carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    
 }
 
 .second a img{
-    width: 370px;
+    width: 343px;
     height: 210px;
     border-radius: 10px;
     filter: brightness(85%);
     transition: all .3s;
+    
+}
+.flecha-izquierda:hover,
+.flecha-derecha:hover{
+    transition: .2s ease all;
+    background:rgba(0,0,0,0.9)
 }
 .second a img:hover{
     filter: brightness(100%);
@@ -90,40 +125,42 @@ h2{
            grid-template-columns: 1fr;
            grid-template-rows: 1fr 1fr ;
        }
-       #IframeyStartButton iframe{
+     /*  #IframeyStartButton iframe{
            width: 100%;
            height: 70%;
-       }
-    
-       .second{
-           display: grid;
-           grid-template-columns: 1fr 1fr;
-           grid-template-rows: 1fr 1fr ;
-       }
-       .second a{
-           padding: 10px;
-       }
-       
-       .second a img{
-           width: 100%; 
-       }
+       }*/
+       #IframeyStartButton iframe{
+        width: 100%;
+        height: 70%;
     }
+    .second a img{
+        width: 216px;
+        height: 120px;
+        
+    }
+    
+}
 
 
     @media screen and (max-width: 752px){
-
         .first{
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr ;
         }
-
         #IframeyStartButton iframe{
             width: 100%;
             height: 70%;
         }
-
-        .second{
+        /* #IframeyStartButton  a button{
+            margin: 10px 0px 10px 240px;
+            
+        } */
+        .flecha-izquierda,
+        .flecha-derecha{
+            display: none;
+        }
+        .second .contenedor-carrusel .carrusel{
             display: grid;
             grid-template-columns: 1fr ;
             grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -134,8 +171,11 @@ h2{
         
         .second a img{
             height: 300px;
-           width: 600px;  
+           width: 600px;
+            
+            
         }
+    
     }
     
     @media screen and (max-width: 390px) {
@@ -144,34 +184,42 @@ h2{
             height: 400px;
             width: 100%;
         }
-        
+       
         #IframeyStartButton iframe{
             margin: 0px;
             height: 220px;
             width: 330px;  
+            
         }
-
-         .first{
-            height: 900px;
+    
+        .first{
+            height: 1200px;
          }
-
+        /* #IframeyStartButton  a button{
+            margin: 10px 0px 10px 180px;
+            
+        } */
+       
         .second{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
          }
-
+        
         .second a{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding-left: 0px; 
+            padding-left: 0px;
         }
         
         .second a img{
             width: 350px;
-            height: auto;  
-        } 
+            height: auto; 
+            
+            
+        }
+    
     }
