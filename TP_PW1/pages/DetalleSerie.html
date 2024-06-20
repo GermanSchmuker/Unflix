@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/generic.css">
-    <link rel="stylesheet" href="../styles/detallesPelis.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/detallesSerie.css">
     <link rel="icon" href="../assets/icons/LogoUnflix.png">
+    <script src="../scripts/detallePeli.js" defer></script>
+    <script src="../scripts/detalleSerie.js" defer></script>
+    <script src="../scripts/nav.js" defer></script>
     <title>Detalles Series - Unflix</title>
+</head>
     <body >
         <nav class="nav">
             <ul>
@@ -22,16 +27,41 @@
                 <li>
                     <a href="perfil.html"><img src="../assets/icons/Profile.svg" alt="Icono_Perfil">Perfil</a>    
                 </li>
+                <li class="li_cerrar_sesion">
+                    <a href="../index.html" title="Cerrar sesión" id="boton_cerrar_sesion"
+                      ><img
+                        src="../assets/icons/CerrarSesion.svg"
+                        alt="Icono_Perfil" 
+                      /></a
+                    >
+                  </li>
             </ul>
         </nav>
         <section class="first" >
             <div id="IframeyStartButton">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/HhesaQXLuRY?si=w3ybMT_K0Yvq4w13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <button>Play</button></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="a_boton_play">Play</a>
             </div>
             <div id="Text">
              <h2> Breaking Bad</h2>
-             <p>2008 ‧ Drama ‧ 5 temporadas</p>
+             <select  id="combo_temporadas">
+                <option value="1">Temporada 1</option>
+                <option value="2">Temporada 2</option>
+                <option value="3">Temporada 3</option>
+                <option value="4">Temporada 4</option>
+                <option value="5">Temporada 5</option>
+             </select>
+             <select  id="combo_capitulos">
+                <option>Capitulo 1: Pilot</option>
+                <option>Capitulo 2: Cats in the Bag...</option>
+                <option>Capitulo 3: ...And the Bags in the River</option>
+                <option>Capitulo 4: Cancer Man</option>
+                <option>Capitulo 5: Gray Matter</option>
+                <option>Capitulo 6: Crazy Handful of Nothing</option>
+                <option>Capitulo 7: A No-Rough-Stuff-Type Deal</option>
+
+             </select>
+
              <p>La serie narra las historias de Walter White, un profesor de química que después de ser diagnosticado de un cáncer pulmonar inoperable termina vendiendo metanfetamina, y de Jesse Pinkman, su exalumno.</p>
              <p>Reparto: <a href="https://es.wikipedia.org/wiki/Bryan_Cranston">Bryan Cranston</a> (Walter White), <a href="https://es.wikipedia.org/wiki/Aaron_Paul">Aaron Paul</a> (Jesse Pinkman),<a href="https://es.wikipedia.org/wiki/Anna_Gunn">Anna Gunn</a> (Skyler White)</p>
             </div>
@@ -39,13 +69,20 @@
         </section>
         <h2>SIMILARES</h2>
         <section class="second">
-            
+            <button id="flecha-izquierda" class="flecha-izquierda"  > <i class="fas fa-angle-left"></i>
+            </button>
+            <div class="contenedor-carrusel">
+                <div class="carrusel">
             <a title="Csi" href="#"><img src="../assets/images/serie21.jpg" alt="Csi" /></a>
             <a title="Pablo Escobar" href="#"><img src="../assets/images/serie2.jpg" alt="PABLO ESCOBAR" /></a>
             <a title="La Ley Y El Orden" href="#"><img src="../assets/images/serie20.jpg" alt="LA LEY Y EL ORDEN" /></a>
             <a title="The Walking Dead" href="#"><img src="../assets/images/serie13.jpg" alt="THE WALKING DEAD" /></a>
-
+            <a title="Csi" href="#"><img src="../assets/images/serie21.jpg" alt="Csi" /></a>
+            <a title="Pablo Escobar" href="#"><img src="../assets/images/serie2.jpg" alt="PABLO ESCOBAR" /></a>
+            <a title="La Ley Y El Orden" href="#"><img src="../assets/images/serie20.jpg" alt="LA LEY Y EL ORDEN" /></a>
+            <a title="The Walking Dead" href="#"><img src="../assets/images/serie13.jpg" alt="THE WALKING DEAD" /></a>
+        </div>
+    </div>
+    <button id="flecha-derecha" class="flecha-derecha" > <i class="fas fa-angle-right"></i></button>
         </section>
-
-    
 </html>

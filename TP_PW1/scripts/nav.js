@@ -1,0 +1,1 @@
+document.querySelector("#boton_cerrar_sesion").addEventListener("click", ()=>{localStorage.clear();});

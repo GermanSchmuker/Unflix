@@ -80,6 +80,7 @@ input[type="search"]:focus{
     background: linear-gradient(0deg, #0a0d1d , #161C40, #1e2759);
     grid-gap: 20px;
     padding: 20px;
+    min-height: 400px;
      
     & a{
         display: flex;
@@ -87,6 +88,17 @@ input[type="search"]:focus{
         align-items: center;
     }
 }
+
+.mensaje_sin_coincidencias_de_busqueda{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/5;
+    font-size: 1.5em;
+    letter-spacing: 4px;
+}
+
 
 .grid img{
     width: 23.125em;

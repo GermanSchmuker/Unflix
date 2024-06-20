@@ -35,6 +35,16 @@ body{
     padding: 5px;
     background-color: #1e2759;
 
+    & .li_cerrar_sesion{
+        width: 4em;
+        
+        & a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 6px;
+        }
+    }
 }
 
 .nav li{
@@ -141,6 +151,10 @@ footer{
             outline: 2px solid #161C40;
         }
 
+        .li_cerrar_sesion{
+            justify-self: end;
+            grid-column: 2/3;
+        } 
     }
 
     .titulo_footer{

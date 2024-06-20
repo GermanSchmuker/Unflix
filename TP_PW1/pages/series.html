@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="../styles/generic.css">
     <link rel="stylesheet" href="../styles/seriesYPeliculas.css">
     <link rel="icon" href="../assets/icons/LogoUnflix.png">
-
+    <script src="../scripts/nav.js" defer></script>
+    <script src="../scripts/series.js" defer></script>
     <title>Series - Unflix</title>
 </head>
 <body>
@@ -24,52 +25,26 @@
             <li>
                 <a href="perfil.html"><img src="../assets/icons/Profile.svg" alt="Icono_Perfil">Perfil</a>    
             </li>
+            <li class="li_cerrar_sesion">
+                <a href="../index.html" title="Cerrar sesión" id="boton_cerrar_sesion"
+                  ><img
+                    src="../assets/icons/CerrarSesion.svg"
+                    alt="Icono_Perfil" 
+                  /></a
+                >
+              </li>
         </ul>
     </nav>
     <section class="ancla_de_categorias">
-        <a href="#autos">Autos</a>
-        <a href="#comedia">Comedia</a>
-        <a href="#terror">Terror</a>
-        <a href="#suspenso">Suspenso</a>
-        <a href="#ciencia_ficción">Ciencia Ficción</a> 
+        <a href="" id="ancla_todas" class="anclas">Todas</a>
+        <a href="" id="ancla_autos" class="anclas">Autos</a>
+        <a href="" id="ancla_comedia" class="anclas">Comedia</a>
+        <a href="" id="ancla_terror" class="anclas">Terror</a>
+        <a href="" id="ancla_suspenso" class="anclas">Suspenso</a>
+        <a href="" id="ancla_ciencia_ficcion" class="anclas">Ciencia Ficción</a> 
     </section>
     <section class="contendor_general">
-        <div id="primer_div">
-            <h4 class="titulos" id="autos">Autos</h4>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie5.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie14.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie15.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie16.jpg" alt=""></a>
-        </div>
-        <div>
-            <h4 class="titulos" id="ciencia_ficción">Ciencia ficción</h4>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie17.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie18.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie19.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie1.jpg" alt=""></a>
-  
-        </div>
-        <div>
-            <h4 class="titulos" id="comedia">Comedia</h4>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie6.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie7.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie8.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie9.jpg" alt=""></a> 
-        </div>
-        <div>
-            <h4 class="titulos" id="terror">Terror</h4>
-            <a href="../pages/detalleSerie.html"> <img src="../assets/images/serie10.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie11.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie12.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie13.jpg" alt=""></a>
-        </div>
-        <div>
-            <h4 class="titulos" id="suspenso">Suspenso</h4>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie1.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie2.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie20.jpg" alt=""></a>
-            <a href="../pages/detalleSerie.html"><img src="../assets/images/serie21.jpg" alt=""></a>
-        </div>
+        <!-- Aca se muestran las series -->
     </section>
 
 

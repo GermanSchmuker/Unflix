@@ -2,39 +2,36 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
+
 .first{
     display: grid;
     grid-template-columns: 40% 60%;
     color: #f4f1f1;
     padding: 35px;
-    
-
 }
+
 #IframeyStartButton iframe{
     border-radius: 15px;
-    
 }
 
-  #IframeyStartButton a button{
+#IframeyStartButton{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.a_boton_play{
+    justify-self: center;
+    align-self: center;
     background-color:  rgb(58, 58, 114);
     color: #f4f1f1;
     font-size: 20px;
     border-radius: 15px;
-    border-color: #f4f1f1;
-    padding: 25px 95px;
-    margin-left: 140px;
-    margin-top: 40px;
-    
-
-    
-}
-#IframeyStartButton a button:hover{
-    cursor:pointer;
-    filter: brightness(110%);
-    transform: scale(1.05);
-
+    border: 1px solid #f4f1f1;
+    padding: 35px 75px;
+    text-decoration: none;
+    margin-top: 20px;
 }
 
  #Text{
@@ -42,45 +39,199 @@ body{
     background-color: rgb(47, 47, 109);
     align-items: center;
     justify-content: center;
-    text-align: center;
-    
+    text-align: center; 
 }
 
  #Text h2{
     font-size: 45px;
     padding: 15px;
-    
 }
+
  #Text p{
     font-size: 17px;
     padding: 15px;
- 
 }
+
 #Text p a{
  color: #f4f1f1;
 }
+
 h2{
     font-size: 35px;
     color: #f4f1f1;
     padding-left: 20px;
 }
-.second{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 25% 75%;
-    font-size: 25px;
+#combo_temporadas, #combo_capitulos{
+    margin: 3px;
+    padding: 3px;
+    font-size: 20px;
+    border: 2px solid#f24405;
+    border-radius: 10px;
     color: #f4f1f1;
-    padding: 20px;
+    background-color:rgb(37, 37, 88) ;
+    
+
+}
+
+.second{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    margin: auto;
+   
+}
+.flecha-izquierda,
+.flecha-derecha{
+    position: absolute;
+    border: none;
+    background:rgba(0,0,0,0.3);
+    font-size: 40px;
+    height: 50%;
+    color: #f4f1f1;
+    cursor: pointer;
+    z-index: 500;
+    
+}
+.second .flecha-izquierda{
+    left: 0;
+}
+.second .flecha-derecha{
+    right: 0;
+}
+
+.second .contenedor-carrusel{
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.second .contenedor-carrusel .carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    
 }
 
 .second a img{
-    width: 370px;
+    width: 343px;
     height: 210px;
     border-radius: 10px;
     filter: brightness(85%);
     transition: all .3s;
+    border: 2px solid #f24405;
+    
+}
+.flecha-izquierda:hover,
+.flecha-derecha:hover{
+    transition: .2s ease all;
+    background:rgba(0,0,0,0.9)
 }
 .second a img:hover{
     filter: brightness(100%);
     transform: scale(1.05);
 }
+
+@media screen and (max-width: 960px) {
+    
+       .first{
+           display: grid;
+           grid-template-columns: 1fr;
+           grid-template-rows: 1fr 1fr ;
+       }
+     /*  #IframeyStartButton iframe{
+           width: 100%;
+           height: 70%;
+       }*/
+       #IframeyStartButton iframe{
+        width: 100%;
+        height: 70%;
+    }
+    .second a img{
+        width: 216px;
+        height: 120px;
+        
+    }
+    
+}
+
+
+    @media screen and (max-width: 752px){
+        .first{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr ;
+        }
+        #IframeyStartButton iframe{
+            width: 100%;
+            height: 70%;
+        }
+        /* #IframeyStartButton  a button{
+            margin: 10px 0px 10px 240px;
+            
+        } */
+        .flecha-izquierda,
+        .flecha-derecha{
+            display: none;
+        }
+        .second .contenedor-carrusel .carrusel{
+            display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        .second a{
+            padding-left: 50px;
+        }
+        
+        .second a img{
+            height: 300px;
+           width: 600px;
+            
+            
+        }
+    
+    }
+    
+    @media screen and (max-width: 390px) {
+
+        #IframeyStartButton{
+            height: 400px;
+            width: 100%;
+        }
+       
+        #IframeyStartButton iframe{
+            margin: 0px;
+            height: 220px;
+            width: 330px;  
+            
+        }
+    
+        .first{
+            height: 1200px;
+         }
+        /* #IframeyStartButton  a button{
+            margin: 10px 0px 10px 180px;
+            
+        } */
+       
+        .second{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+        
+        .second a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0px;
+        }
+        
+        .second a img{
+            width: 350px;
+            height: auto; 
+            
+            
+        }
+    
+    }

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../styles/generic.css" />
     <link rel="stylesheet" href="../styles/home.css" />
     <link rel="icon" href="../assets/icons/LogoUnflix.png">
+    <script src="../scripts/nav.js" defer></script>
+    <script src="../scripts/home.js" defer></script>
     <title>Inicio - Unflix</title>
   </head>
   <body>
@@ -37,10 +39,18 @@
             />Perfil</a
           >
         </li>
+        <li class="li_cerrar_sesion">
+          <a href="../index.html" title="Cerrar sesión" id="boton_cerrar_sesion"
+            ><img
+              src="../assets/icons/CerrarSesion.svg"
+              alt="Icono_Perfil" 
+            /></a
+          >
+        </li>
       </ul>
     </nav>
 
-    <section class="contenedor_filtros">
+    <section class="contenedor_filtros"">
       <div class="categorias">
         <h1 class="titulo_categorias">Categorias</h1>
         <select name="selector_categorias" id="selector_categorias">
@@ -48,139 +58,20 @@
           <option value="comedia">Comedia</option>
           <option value="terror">Terror</option>
           <option value="suspenso">Suspenso</option>
-          <option value="ciencia_ficcion">Ciencia ficción</option>
+          <option value="ciencia ficcion">Ciencia ficción</option>
           <option value="autos">Autos</option>
         </select>
       </div>
       <div class="buscador">
         <img src="../assets/icons/Lupa.svg" alt="Icono_Lupa" id="icono_lupa" />
-        <input type="search" placeholder="Buscar" />
+        <input type="search" placeholder="Buscar" id="buscador"/>
       </div>
     </section>
-    
-    <section class="grid">
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie2.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula1.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula2.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie1.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie4.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula3.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula4.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie3.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula5.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula1.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula2.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie1.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula6.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula7.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie4.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula1.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula2.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie1.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie2.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula3.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula4.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie3.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula5.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula6.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula7.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie4.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula1.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula2.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie1.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie2.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula3.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula4.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie3.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula5.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula6.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula7.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie4.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie1.jpg" alt=""
-      /></a>
-      <a href="../pages/detalleSerie.html"
-        ><img src="../assets/images/serie2.jpg" alt=""
-      /></a>
-      <a href="../pages/detallePeli.html"
-        ><img src="../assets/images/pelicula3.jpg" alt=""
-      /></a>
-    </section>
 
+    <section class="grid">
+      <!-- CONTENDEOR DE TODAS LAS PELICULAS Y SERIES -->
+    </section>
+    
     <footer class="footer">
       <h2 class="titulo_footer">Integrantes</h2>
       <section class="contendor_nombres_footer">
@@ -189,5 +80,7 @@
         <h3>Brian Hidalgo</h3>
       </section>
     </footer>
+
+
   </body>
 </html>
