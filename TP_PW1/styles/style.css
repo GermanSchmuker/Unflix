@@ -9,14 +9,14 @@
     src: url(../assets/fonts/Lexend-Deca/LexendDeca-Regular.ttf);
 }
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'regular';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'regular';
 }
 
-body{
+body {
     background-color: #161C40;
 }
 
@@ -26,24 +26,25 @@ header {
     font-family: "Open Sans", sans-serif;
 }
 
-.container{
-width: 90vw;
-height: 180px;
-margin-top: 25px;
-border-radius: 25px;
-overflow: hidden;
- position: relative;
- margin: 20px auto;
- box-shadow: 5px 8px 12px #000;
+.container {
+    width: 90vw;
+    height: 180px;
+    margin-top: 25px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+    box-shadow: 5px 8px 12px #000;
 
 }
 
-.container img{
+.container img {
     width: 100%;
     height: 100%;
 
 }
-.container h1{
+
+.container h1 {
     font-size: 2rem;
     position: absolute;
     left: 50%;
@@ -51,38 +52,42 @@ overflow: hidden;
     transform: translate(-50%, -50%);
 
 }
-.container p{
 
-position: absolute;
-left: 50%;
-top: 80%;
-transform: translate(-50%, -50%);
+.container p {
+
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
 
 }
-.formulario{
+
+.formulario {
     color: rgb(248, 248, 248);
-position: absolute;
-left: 50%;
-top: 60%;
-transform: translate(-50%, -50%);
-width: 400px;
-background:  #1e2759;
-border-radius: 10px;
-border:2px #f24405 solid;
-box-shadow: 5px 5px 12px #f24405;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #1e2759;
+    border-radius: 10px;
+    border: 2px #f24405 solid;
+    box-shadow: 5px 5px 12px #f24405;
 }
 
-.formulario h2{
+.formulario h2 {
     font-size: 2rem;
     text-align: center;
     padding: 0 0 20px 0;
     border-bottom: 2px #f24405 solid;
 }
-form .contenedorCampo{
+
+form .contenedorCampo {
     position: relative;
     margin: 30px;
 }
-.contenedorCampo input{
+
+.contenedorCampo input {
     color: #ffffff;
     width: 100%;
     padding: 0 5px;
@@ -92,116 +97,195 @@ form .contenedorCampo{
     border-radius: 10px;
     background: none;
 }
-.contenedorCampo label{
- position: absolute;
- top:-10px  ;
- left: 15px;
-color: #ffffff84;
-transform: translateY(-50%);
+
+.contenedorCampo label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    color: #ffffff84;
+    transform: translateY(-50%);
 }
 
-.boton_inicio{
-width: 150px;
-height: 30px;
-background: #f24405;
-border-radius: 25px ;
-color: white;
-border: 2px #ff1327;
-position: absolute;
-left: 50%;
-transform: translate(-50%);
-cursor: pointer;
+.boton_inicio {
+    width: 150px;
+    height: 30px;
+    background: #f24405;
+    border-radius: 25px;
+    color: white;
+    border: 2px #ff1327;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
 }
-.link_recuperar_contraseña{
+
+.link_recuperar_contraseña {
     text-align: center;
     margin-bottom: 15px;
 
 }
 
-.link_registro{
+.link_registro {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
     padding: 25px;
 }
+
 /* recuperarContraseña */
 
-.boton_email{
+.boton_email {
     width: 150px;
     height: 30px;
     border: 2px #ff1327;
     background: #f24405;
     color: white;
     border-radius: 25px;
-    margin-left:25px ;
+    margin-left: 25px;
     margin-bottom: 20px;
 }
-.boton_cancelar{
+
+.boton_cancelar {
     width: 150px;
     height: 30px;
     border: 2px #ff1327;
     background: #f24405;
     color: white;
     border-radius: 25px;
-    margin-left:25px ;
+    margin-left: 25px;
 
 }
-.formulario_recuperar_contraseña{
+
+.formulario_recuperar_contraseña {
     color: rgb(248, 248, 248);
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
-width: 400px;
-background:  #1e2759;
-border-radius: 10px;
-border:2px #f24405 solid;
-box-shadow: 5px 5px 12px #f24405;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #1e2759;
+    border-radius: 10px;
+    border: 2px #f24405 solid;
+    box-shadow: 5px 5px 12px #f24405;
 }
-.formulario_recuperar_contraseña h2{
+
+.formulario_recuperar_contraseña h2 {
     font-size: 2rem;
     text-align: center;
     padding: 0 0 20px 0;
     border-bottom: 2px #f24405 solid;
 }
+
+.boton_email {
+    cursor: pointer;
+}
+
 /* registro */
-.formulario_registrar_usuario{
+.formulario_registrar_usuario {
     color: rgb(248, 248, 248);
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
-width: 700px;
-background:  #1e2759;
-border-radius: 10px;
-border:2px #f24405 solid;
-box-shadow: 5px 5px 12px #f24405;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    background: #1e2759;
+    border-radius: 10px;
+    border: 2px #f24405 solid;
+    box-shadow: 5px 5px 12px #f24405;
 }
-.formulario_registrar_usuario h2{
+
+.formulario_registrar_usuario h2 {
     font-size: 2rem;
     text-align: center;
     padding: 0 0 20px 0;
     border-bottom: 2px #f24405 solid;
 }
-.formulario_registro{
- display: flex;
- justify-content: center;
+
+.formulario_registro {
+    display: flex;
+    justify-content: center;
 }
-.botones_pagos{
+
+.botones_pagos {
     display: flex;
 }
-.botones_pagos div{
-    margin:auto;
+
+.botones_pagos div {
+    margin: auto;
     margin-top: 10px;
 }
-#cupon_pago{
-width: 20px;    
+
+#cupon_pago {
+    width: 20px;
 }
 
-
-
 /*-----------------*/
-button a{
+button a {
     text-decoration: none;
     color: #f0f0f0;
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        width: 90vw;
+        height: 140px;
+    }
+
+    .formulario {
+        left: 50%;
+        top: 45%;
+
+    }
+
+}
+
+@media screen and (max-width: 752px) {
+    .formulario_registrar_usuario {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .contenedor_imagen_subTitulo {
+        display: none;
+    }
+
+    .container {
+        height: 70px;
+        border-radius: 25px;
+        margin: 20px auto;
+        box-shadow: 5px 8px 12px #f24405;
+        border: #f24405 2px solid;
+    }
+
+    .formulario {
+        left: 50%;
+        top: 40%;
+        width: 350px;
+    }
+
+    /* ------------------- */
+    .formulario_recuperar_contraseña {
+        left: 50%;
+        top: 35%;
+        width: 350px;
+    }
+
+    /* ------------------- */
+    .formulario_registrar_usuario {
+        width: 350px;
+    }
+
+    .formulario_registro {
+        display: grid;
+        justify-content: center;
+    }
+
+    .boton_cancelar {
+        width: 130px;
+    }
+
+    .boton_email {
+        width: 130px;
+    }
 }

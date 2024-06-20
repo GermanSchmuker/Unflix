@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iniciar sesión - Uniflix</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="icon" href="assets/icons/LogoUnflix.png">
+    <link rel="icon" href="assets/icons/LogoUnflix.png" />
   </head>
   <body>
     <header>
       <section class="container">
-        <img src="assets/images/imagenTierra.jpg" alt="" />
         <h1>UNFLIX</h1>
-        <p>Las mejores series y peliculas</p>
+        <div class="contenedor_imagen_subTitulo">
+          <p>Las mejores series y peliculas</p>
+          <img src="assets/images/imagenTierra.jpg" alt="" />
+        </div>
       </section>
-      
     </header>
     <section class="formulario">
       <h2>Inicio de sesión</h2>
-      <form>
+      <form onsubmit="return valida_campo(event)">
         <div class="contenedorCampo">
           <label for="campoDeTexto1">Nombre de usuario</label>
-          <input type="text " id="campoDeTexto1" />
+          <input type="text " name="Nombre" id="campoDeTexto1" />
         </div>
         <div class="contenedorCampo">
           <label for="campoDeTexto2">Contraseña</label>
@@ -31,9 +32,7 @@
           Olvidaste tu contraseña?
           <a href="../TP_PW1/pages/recuContraseña.html">Recuperar contraseña</a>
         </p>
-        <button type="submit" class="boton_inicio">
-          <a href="../TP_PW1/pages/home.html"> Iniciar sesión</a>
-        </button>
+        <button id="boton_inicio" name="boton_inicio" type="submit" class="boton_inicio"> Iniciar sesión</button>
 
         <p class="link_registro">
           No tenes cuenta?
@@ -42,4 +41,5 @@
       </form>
     </section>
   </body>
+  <script type="text/javascript" src="./codigoJs/index.js"></script>
 </html>

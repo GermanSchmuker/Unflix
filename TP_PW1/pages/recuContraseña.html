@@ -4,30 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="icon" href="../assets/icons/LogoUnflix.png">
+    <link rel="icon" href="../assets/icons/LogoUnflix.png" />
 
     <title>Recuperar contraseña - Unflix</title>
   </head>
   <body>
     <section class="formulario_recuperar_contraseña">
       <h2>Recuperar Contraseña</h2>
-      <form>
+      <form onsubmit="return valida_campo(event)">
         <div class="contenedorCampo">
           <label for="campoDeTexto1">Email</label>
           <input type="text " id="campoDeTexto1" />
         </div>
         <div class="contenedorCampo">
           <label for="campoDeTexto2">Nombre de Usuario</label>
-          <input type="text " id="campoDeTexto1" />
+          <input type="text " id="campoDeTexto2" />
         </div>
 
-        <button type="submit" class="boton_email">
-          <a href="#"> Enviar email</a>
-        </button>
-        <button type="submit" class="boton_cancelar">
+        <button type="submit" id="botonEnviar" class="boton_email"> Enviar email</button>
+        <button type="button" class="boton_cancelar">
           <a href="../index.html"> Cancelar</a>
         </button>
       </form>
     </section>
+    <script type="text/javascript" src="../codigoJs/recuContraseña.js"></script>
   </body>
 </html>

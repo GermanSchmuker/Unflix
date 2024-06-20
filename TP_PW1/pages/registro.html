@@ -9,34 +9,34 @@
     <title>Registro - Unflix</title>
   </head>
   <body>
-    <section class="formulario_registrar_usuario">
+    <section onsubmit="return valida_campo(event)" class="formulario_registrar_usuario">
       <h2>Registrarse</h2>
       <div class="formulario_registro">
         <form>
           <div class="datos_usuario">
             <div class="contenedorCampo">
-              <label for="campoDeTexto1">Nombre</label>
-              <input type="text " id="campoDeTexto1" />
+              <label for="nombre">Nombre</label>
+              <input type="text " id="nombre" />
             </div>
             <div class="contenedorCampo">
-              <label for="campoDeTexto1">Apellido</label>
-              <input type="text " id="campoDeTexto1" />
+              <label for="apellido">Apellido</label>
+              <input type="text " id="apellido" />
             </div>
             <div class="contenedorCampo">
-              <label for="campoDeTexto1">E-mail</label>
-              <input type="text " id="campoDeTexto1" />
+              <label for="email">E-mail</label>
+              <input type="text " id="email"  placeholder="example@ex.com"/>
             </div>
             <div class="contenedorCampo">
-              <label for="campoDeTexto1">Nombre de usuario</label>
-              <input type="text " id="campoDeTexto1" />
+              <label for="nombre_usuario">Nombre de usuario</label>
+              <input type="text " id="nombre_usuario" />
             </div>
             <div class="contenedorCampo">
-              <label for="campoDeTexto2">Contraseña</label>
-              <input type="text " id="campoDeTexto1" />
+              <label for="contraseña">Contraseña</label>
+              <input type="password" id="contraseña" />
             </div>
             <div class="contenedorCampo">
-              <label for="campoDeTexto2">Repetir contraseña</label>
-              <input type="text " id="campoDeTexto1" />
+              <label for="repetir_contraseña">Repetir contraseña</label>
+              <input type="password" id="repetir_contraseña" />
             </div>
           
           </div>
@@ -44,8 +44,12 @@
         <form>
           <div class="metodo_pago">
             <div class="contenedorCampo">
-              <label for="campoDeTexto2">Tarjeta de credito</label>
-              <input type="number " id="campoDeTexto1" />
+              <label for="tarjeta">Tarjeta de credito</label>
+              <input type="number " id="tarjeta" />
+            </div>
+            <div class="contenedorCampo">
+              <label for="clave_tarjeta">Clave</label>
+              <input type="number " id="clave_tarjeta" />
             </div>
             <div class="contenedorCampo">
               <label for="campoDeTexto2">Cupon de pago</label>
@@ -66,10 +70,8 @@
               <p>CBU: 285059094009041813520 </p>
             </div>
           </div>
-          <button type="submit" class="boton_email">
-            <a href="../index.html"> Confirmar</a>
-          </button>
-          <button type="submit" class="boton_cancelar">
+          <button id="boton_confirmar" type="submit" class="boton_email"> Confirmar</button>
+          <button class="boton_cancelar">
             <a href="../index.html"> Cancelar</a>
           </button>
         </div>
@@ -79,5 +81,6 @@
       </div>
       
     </section>
+    <script type="text/javascript" src="../codigoJs/registro.js"></script>
   </body>
 </html>
