@@ -2,8 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let nombre = document.getElementById("nombre");
     let apellido = document.getElementById("apellido");
     let email = document.getElementById("email");
+    // localStorage.setItem("email", email.value);
     let nombreUsuario = document.getElementById("nombre_usuario");
     let contraseña = document.getElementById("contraseña");
+    //localStorage.setItem("contraseña", contraseña.value);
     let contraseña2 = document.getElementById("repetir_contraseña");
     let tarjeta = document.getElementById("tarjeta");
     let clave = document.getElementById("clave_tarjeta");

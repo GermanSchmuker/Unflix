@@ -25,6 +25,14 @@ let claveValida = false;
 let checkBoxPagoFacil = document.querySelector("#pago_facil");
 let checkBoxRappiPago = document.querySelector("#check_rapi_pago");
 
+let nombreDeUsuario = document.getElementById("nombreDeUsuario");
+nombreDeUsuario.textContent = localStorage.getItem("nombreUsuario");
+
+// let emailValor = document.getElementById("email_valor");
+// emailValor.textContent = localStorage.getItem("email");
+
+// let contraseña = document.getElementById("password_readonly");
+// contraseña.textContent = localStorage.getItem("contraseña");
 
 
 /*-------------Validar Contraseña---------------------------------------------------------------*/
