@@ -11,7 +11,7 @@ function valida_campo(event) {
     }
     localStorage.setItem('nombreUsuario', nombre.value);
 
-    window.location.href = "../TP_PW1/pages/home.html";
+    window.location.href = "pages/home.html";
 
     return true;
 
