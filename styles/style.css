@@ -34,7 +34,7 @@ header {
     overflow: hidden;
     position: relative;
     margin: 20px auto;
-    box-shadow: 5px 8px 12px #000;
+    box-shadow: 5px 8px 12px #000000;
 
 }
 
@@ -72,14 +72,13 @@ header {
     background: #1e2759;
     border-radius: 10px;
     border: 2px #f24405 solid;
-    box-shadow: 5px 5px 12px #f24405;
+    box-shadow: 0px 0px 20px #f24405;
 }
 
 .formulario h2 {
     font-size: 2rem;
     text-align: center;
-    padding: 0 0 20px 0;
-    border-bottom: 2px #f24405 solid;
+    padding: 20px 0 30px 0;
 }
 
 form .contenedorCampo {
@@ -93,22 +92,26 @@ form .contenedorCampo {
     padding: 0 5px;
     height: 40px;
     font-size: 16px;
-    border: 1px #000000 solid;
+    border: 1px #ffffff solid;
     border-radius: 10px;
     background: none;
 }
 
+.contenedorCampo input:focus{
+    outline: none;
+}
+
 .contenedorCampo label {
     position: absolute;
-    top: -10px;
-    left: 15px;
+    top: -15px;
+    left: 3px;
     color: #ffffff84;
     transform: translateY(-50%);
 }
 
 .boton_inicio {
-    width: 150px;
-    height: 30px;
+    width: 12em;
+    height: 2.2em;
     background: #f24405;
     border-radius: 25px;
     color: white;
@@ -117,19 +120,37 @@ form .contenedorCampo {
     left: 50%;
     transform: translate(-50%);
     cursor: pointer;
+    font-size: 1em;
 }
 
 .link_recuperar_contraseña {
     text-align: center;
     margin-bottom: 15px;
+    font-size: .9em;
+
+    & a{
+        color: white;
+    } 
+    a:hover{
+        color: #f24405;
+    }
 
 }
 
 .link_registro {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 10px;
     padding: 25px;
+    font-size: 1em;
+
+
+    & a{
+        color: white;
+    } 
+    a:hover{
+        color: #f24405;
+    }
 }
 
 /* recuperarContraseña */
